@@ -1,0 +1,28 @@
+{
+  "name": "mdconv — редактор і конвертер",
+  "short_name": "mdconv",
+  "description": "Офлайн-редактор і конвертер: Markdown, JSON, YAML, TOML, XML, CSV, HTML та код",
+  "lang": "uk",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0e13",
+  "theme_color": "#12151c",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "text/markdown": [".md", ".markdown"],
+        "application/json": [".json", ".jsonl"],
+        "text/yaml": [".yaml", ".yml"],
+        "text/csv": [".csv", ".tsv"],
+        "text/plain": [".txt", ".log", ".toml", ".ini", ".xml", ".sql"]
+      }
+    }
+  ]
+}
